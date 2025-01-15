@@ -1,10 +1,11 @@
 function firstWord(s) {
   // your code here
-	if (s === "" || s.trim() === "") {
+	const spaceIndex = s.indexOf(' ');
+	if (spaceIndex === -1){
 		return s;
+	} else {
+		return s.substring(0,spaceIndex)
 	}
-	const match = s.match(/^\S+/);
-	return match ? match[0] : s;
 }
 
 // Do not change the code below
