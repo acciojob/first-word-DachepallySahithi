@@ -1,13 +1,13 @@
-function firstWord(str) {
+function firstWord(s) {
   // your code here
-	if(str === ''){
+	if(s === ''){
 		return '';
 	}
-	const spaceIndex = str.indexOf(' ');
+	const spaceIndex = s.indexOf(' ');
 	if(spaceIndex === -1){
 		return str;
 	}
-	return str.slice(0, spaceIndex);
+	return s.slice(0, spaceIndex);
 // Do not change the code below
 
 const s = prompt("Enter String:");
