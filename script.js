@@ -1,13 +1,10 @@
 function firstWord(s) {
   // your code here
-	const spaceIndex = s.indexOf(' ');
-	if (spaceIndex === -1){
+	if(s === "" || !s.includes(" ")){
 		return s;
-	} else {
-		return s.substring(0,spaceIndex)
 	}
-}
-
+	const spaceIndex = s.indexOf(" ");
+	return s.slice(0, spaceIndex);
 // Do not change the code below
 
 const s = prompt("Enter String:");
