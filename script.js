@@ -1,6 +1,5 @@
 function firstWord(s) {
   // your code here
-	s=s.trim;
 	console.log("Input string:", s);
 	if(s==='' || !s.includes(' ')) {
 		console.log("Returning entire string:", s);
