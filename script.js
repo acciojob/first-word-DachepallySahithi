@@ -1,10 +1,15 @@
 function firstWord(s) {
   // your code here
+	console.log("Input string:", s);
 	if(s==='' || !s.includes(' ')) {
+		console.log("Returning entire string:", s);
 		return s;
 	}
 	const spaceIndex = s.indexOf(' ');
-	return s.substring(0, spaceIndex);
+	console.log("Space index:", spaceIndex); 
+  const firstWord = s.substring(0, spaceIndex);
+  console.log("First word:", firstWord);
+  return firstWord;
 }
 // Do not change the code below
 
